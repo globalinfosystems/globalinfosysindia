@@ -655,6 +655,52 @@ nav a {
   padding: 80px 20px;
 }
 
+/* MODERN CTA SECTION */
+.cta-modern {
+  position: relative;
+  padding: 120px 20px;
+  text-align: center;
+  color: white;
+  background: url("hero2.jpg") center/cover no-repeat;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(10,26,47,0.85),
+    rgba(10,26,47,0.85)
+  );
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cta-modern h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.cta-modern p {
+  font-size: 18px;
+  color: #E5E7EB;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
 /* MODERN CONTACT SECTION */
 .contact-modern {
   background: linear-gradient(
