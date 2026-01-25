@@ -145,7 +145,7 @@ nav a {
       rgba(108,99,255,0.9),
       rgba(108,99,255,0.9)
     ),
-    url("hero.jpg") center/cover no-repeat;
+    url("hero.png") center/cover no-repeat;
   color: white;
   text-align: center;
 }
