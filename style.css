@@ -154,6 +154,94 @@ nav a {
   position: relative;
   overflow: hidden;
 }
+/* FEATURED SERVICES */
+.services-featured {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.service-feature {
+  height: 300px;
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+.service-feature::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(10,26,47,0.85),
+    rgba(10,26,47,0.6)
+  );
+}
+
+.service-feature-content {
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+  color: white;
+}
+
+.service-feature-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.service-feature-content p {
+  font-size: 15px;
+}
+
+/* FEATURE BACKGROUNDS */
+.service-feature.dataai {
+  background-image: url("data-ai.jpg");
+}
+
+.service-feature.cloud {
+  background-image: url("cloud.jpg");
+}
+
+.service-feature.cyber {
+  background-image: url("cybersecurity.jpg");
+}
+
+/* SERVICE CATALOG */
+.services-catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.catalog-card {
+  background: #ffffff;
+  border-left: 4px solid #00CFE8;
+  padding: 18px 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalog-card:hover {
+  transform: translateX(6px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.2);
+}
+
+/* TAGLINE */
+.services-tagline {
+  text-align: center;
+  font-size: 16px;
+  color: #374151;
+  margin-top: 20px;
+}
+
 
 /* OVERLAY */
 .card.service::before {
