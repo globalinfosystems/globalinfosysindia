@@ -17,6 +17,27 @@ body {
   margin: auto;
 }
 
+/* NAV ACTIVE STATE */
+.main-nav .nav-link {
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.main-nav .nav-link:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* ACTIVE LINK */
+.main-nav .nav-link.active {
+  background: #00CFE8;
+  color: #0A1A2F;
+  font-weight: 600;
+}
+
+
 /* HEADER */
 .header {
   position: fixed;
