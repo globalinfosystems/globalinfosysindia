@@ -23,6 +23,43 @@
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
+  <script>
+  const navLinks = document.querySelectorAll(".nav-link");
+  const sections = document.querySelectorAll("section[id]");
+
+  function setActiveLink() {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+
+      // Home page
+      if (
+        current === "" &&
+        link.getAttribute("data-page") === "home"
+      ) {
+        link.classList.add("active");
+      }
+
+      // Section-based active
+      if (link.getAttribute("data-page") === current) {
+        link.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", setActiveLink);
+  window.addEventListener("load", setActiveLink);
+</script>
+
   
 <body>
 
