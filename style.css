@@ -181,7 +181,7 @@ nav a {
 /* BACKGROUND IMAGE SLIDER */
 @keyframes heroSlide {
   0% {
-    background-image: url("hero1.jpg");
+    background-image: url("hero.png");
   }
   25% {
     background-image: url("hero2.jpg");
@@ -573,7 +573,7 @@ nav a {
       rgba(10,26,47,0.92),
       rgba(10,26,47,0.92)
     ),
-    url("hero.jpg") center/cover no-repeat;
+    url("hero.png") center/cover no-repeat;
   color: white;
   text-align: center;
 }
