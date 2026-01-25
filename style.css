@@ -181,6 +181,80 @@ to {
   color: #374151;
 }
 
+/* ROYAL INDUSTRIES SECTION */
+.industries-royal {
+  background: linear-gradient(
+    135deg,
+    #0A1A2F 0%,
+    #0F2A44 50%,
+    #091B30 100%
+  );
+  padding: 120px 0;
+  text-align: center;
+  color: white;
+}
+
+.industries-royal h2 {
+  color: #FFFFFF;
+}
+
+.industries-intro {
+  max-width: 780px;
+  margin: 0 auto 70px;
+  font-size: 17px;
+  color: #D1D5DB;
+}
+
+/* GRID */
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+}
+
+/* CARD */
+.industry-card {
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.12),
+    rgba(255,255,255,0.03)
+  );
+  border-radius: 18px;
+  padding: 45px 32px;
+  backdrop-filter: blur(8px);
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.45),
+    inset 0 0 0 1px rgba(255,255,255,0.06);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-12px);
+  box-shadow:
+    0 30px 70px rgba(0,0,0,0.6),
+    inset 0 0 0 1px rgba(0,207,232,0.35);
+}
+
+/* ICON */
+.industry-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+/* TEXT */
+.industry-card h3 {
+  font-size: 20px;
+  margin-bottom: 14px;
+  color: #00CFE8;
+}
+
+.industry-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #E5E7EB;
+}
+
+
 /* GRID */
 .industries-grid {
   display: grid;
