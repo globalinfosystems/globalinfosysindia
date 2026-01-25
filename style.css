@@ -296,7 +296,7 @@ nav a {
     rgba(3, 8, 20, 0.88) 50%,
     rgba(3, 8, 20, 0.92) 100%
   );
-  filter: brightness(0.85) contrast(1.1);
+  /* filter: brightness(0.85) contrast(1.1); */
   z-index: 1;
 }
 
