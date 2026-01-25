@@ -92,7 +92,7 @@ nav a {
       rgba(10,26,47,0.75),
       rgba(10,26,47,0.75)
     ),
-    url("hero.jpg") center/cover no-repeat;
+    url("hero.png") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
