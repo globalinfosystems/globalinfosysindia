@@ -23,95 +23,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-  <!-- HERO SLIDER -->
-<section class="hero-slider">
-
-  <div class="slides fade">
-    <img src="slide1.jpg" alt="Data Analytics">
-    <div class="slide-content">
-      <h1>Data • Cloud • AI</h1>
-      <p>Engineering digital solutions for modern enterprises</p>
-    </div>
-  </div>
-
-  <div class="slides fade">
-    <img src="slide2.jpg" alt="Cloud Services">
-    <div class="slide-content">
-      <h1>Cloud Transformation</h1>
-      <p>Secure, scalable and future-ready platforms</p>
-    </div>
-  </div>
-
-  <div class="slides fade">
-    <img src="slide3.jpg" alt="AI Solutions">
-    <div class="slide-content">
-      <h1>Data & AI Solutions</h1>
-      <p>Turn data into business intelligence</p>
-    </div>
-  </div>
-
-  <div class="slides fade">
-    <img src="slide4.jpg" alt="IT Consulting">
-    <div class="slide-content">
-      <h1>Enterprise IT Consulting</h1>
-      <p>Driving innovation through technology</p>
-    </div>
-  </div>
-
-  <!-- NAVIGATION -->
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <!-- DOTS -->
-  <div class="dots">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-  </div>
-
-</section>
-  <script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("slides");
-  let dots = document.getElementsByClassName("dot");
-
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
-
-/* AUTO SLIDE */
-setInterval(() => {
-  plusSlides(1);
-}, 6000);
-</script>
-
-
-
-
+  
 <body>
 
 <!-- HEADER -->
@@ -138,16 +50,18 @@ setInterval(() => {
 </header>
 
 <!-- HERO -->
-<section class="hero animate">
+<section class="hero hero-slider animate">
   <div class="hero-content">
     <h1>Engineering Digital Futures</h1>
     <p>Data Analytics, Cloud Transformation & Enterprise IT Services</p>
+
     <div class="hero-buttons">
       <a href="#services" class="btn primary">Our Services</a>
       <a href="#contact" class="btn outline">Talk to Us</a>
     </div>
   </div>
 </section>
+
 
 <!-- TRUST -->
 <section class="trust animate">
