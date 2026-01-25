@@ -78,6 +78,73 @@ body {
   line-height: 1.1;
 }
 
+/* ENTERPRISE VALUE SECTION */
+.enterprise-section {
+  background: #F4F7FA;
+  padding: 110px 0;
+  text-align: center;
+}
+
+.enterprise-intro {
+  max-width: 780px;
+  margin: 0 auto 60px;
+  font-size: 17px;
+  color: #374151;
+}
+
+/* GRID */
+.enterprise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.enterprise-card {
+  background: white;
+  padding: 35px 28px;
+  border-radius: 14px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.enterprise-card:hover {
+  transform: translateY(-8px);
+}
+
+.enterprise-card h3 {
+  margin-bottom: 12px;
+  color: #0A1A2F;
+  font-size: 18px;
+}
+
+.enterprise-card p {
+  font-size: 15px;
+  color: #4B5563;
+  line-height: 1.6;
+}
+
+/* STATS */
+.enterprise-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 40px;
+}
+
+.stat span {
+  font-size: 36px;
+  font-weight: 800;
+  color: #00CFE8;
+}
+
+.stat p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+
+
 /* MAIN COMPANY NAME */
 .brand-main {
   font-size: 20px;
