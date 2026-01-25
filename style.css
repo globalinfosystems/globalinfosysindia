@@ -50,6 +50,70 @@ body {
   font-weight: bold;
   font-size: 18px;
 }
+/* BRAND TEXT CONTAINER */
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+/* MAIN COMPANY NAME */
+.brand-main {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  background: linear-gradient(
+    90deg,
+    #00CFE8,
+    #6C63FF,
+    #00CFE8
+  );
+  background-size: 200% auto;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMove 4s linear infinite,
+             slideFadeIn 1s ease forwards;
+}
+
+/* TAGLINE */
+.brand-sub {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #E5E7EB;
+  margin-top: 4px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 0.6s;
+}
+
+/* GRADIENT ANIMATION */
+@keyframes gradientMove {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* ENTRY ANIMATIONS */
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 
 /* NAV */
 nav a {
@@ -378,5 +442,13 @@ footer {
   }
   .card.service {
     height: 260px;
+  }
+  .brand-main {
+    font-size: 16px;
+  }
+
+  .brand-sub {
+    font-size: 10px;
+    letter-spacing: 1.5px;
   }
 }
