@@ -170,6 +170,41 @@ nav a {
   margin: 20px 0 30px;
   font-size: 18px;
 }
+/* CAREERS SECTION */
+.careers-section {
+  background: #F4F7FA;
+  text-align: center;
+}
+
+.careers-sub {
+  margin-bottom: 50px;
+  color: #374151;
+}
+
+.careers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.career-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-8px);
+}
+
+.career-card h3 {
+  color: #0A1A2F;
+  margin-bottom: 10px;
+}
+
 
 /* TRUST */
 .trust {
