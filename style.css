@@ -16,6 +16,43 @@ body {
   max-width: 1200px;
   margin: auto;
 }
+/* MAINTENANCE BAR */
+.maintenance-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 34px;
+  background: linear-gradient(90deg, #F59E0B, #F97316);
+  overflow: hidden;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+}
+
+/* SCROLLING TEXT */
+.maintenance-text {
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0A1A2F;
+  padding-left: 100%;
+  animation: scrollLeft 15s linear infinite;
+}
+
+/* ANIMATION */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* PUSH HEADER DOWN */
+.header {
+  top: 34px;
+}
 
 /* NAV ACTIVE STATE */
 .main-nav .nav-link {
