@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Global Info Systems | Data & Cloud Solutions</title>
+  <meta charset="UTF-8" />
+  <title>Global Info Systems | Data Analytics & Cloud Services</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Global Info Systems provides enterprise data analytics, cloud services, and IT consulting solutions.">
+  <meta name="keywords" content="IT company, data analytics, cloud services, enterprise IT, Global Info Systems">
+  <meta name="author" content="Global Info Systems">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Global Info Systems">
+  <meta property="og:description" content="Enterprise Data Analytics & Cloud Services">
+  <meta property="og:image" content="https://globalinfosysindia.com/hero.jpg">
+  <meta property="og:type" content="website">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Smooth Scroll -->
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
+
 <body>
 
 <!-- HEADER -->
 <header class="header">
   <div class="container nav">
 
-    <!-- LOGO -->
     <div class="logo">
       <a href="index.html" class="logo-wrap">
         <img src="logo.png" alt="Global Info Systems Logo">
@@ -25,7 +41,6 @@
       </a>
     </div>
 
-    <!-- NAVIGATION -->
     <nav>
       <a href="#services">Services</a>
       <a href="#industries">Industries</a>
@@ -37,7 +52,7 @@
 </header>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero animate">
   <div class="hero-content">
     <h1>Engineering Digital Futures</h1>
     <p>Data Analytics, Cloud Transformation & Enterprise IT Services</p>
@@ -50,7 +65,7 @@
 </section>
 
 <!-- TRUST -->
-<section class="trust">
+<section class="trust animate">
   <div class="container">
     <h2>Enterprise-Grade IT Solutions</h2>
     <p>
@@ -61,14 +76,14 @@
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="section dark-bg">
+<section id="services" class="section dark-bg animate">
   <div class="container">
     <h2>Our Services</h2>
 
     <div class="grid">
       <div class="card">
         <h3>Data Analytics</h3>
-        <p>Dashboards, reporting, business intelligence and advanced analytics.</p>
+        <p>Business intelligence, dashboards, reporting and advanced analytics.</p>
       </div>
 
       <div class="card">
@@ -85,7 +100,7 @@
 </section>
 
 <!-- INDUSTRIES -->
-<section id="industries" class="section light">
+<section id="industries" class="section light animate">
   <div class="container">
     <h2>Industries We Serve</h2>
     <div class="grid">
@@ -98,7 +113,7 @@
 </section>
 
 <!-- TECHNOLOGIES -->
-<section id="tech" class="section tech-bg">
+<section id="tech" class="section tech-bg animate">
   <div class="container">
     <h2>Technology Expertise</h2>
     <ul class="tech-list">
@@ -111,24 +126,37 @@
 </section>
 
 <!-- CTA -->
-<section class="cta">
+<section class="cta animate">
   <h2>Ready to Transform Your Business?</h2>
   <a href="#contact" class="btn primary">Contact Global Info Systems</a>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section light">
+<section id="contact" class="section light animate">
   <div class="container contact-box">
     <h2>Contact Us</h2>
     <p><strong>Email:</strong> contact@globalinfosysindia.com</p>
+    <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
     <p><strong>Location:</strong> India</p>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   © 2026 Global Info Systems. All rights reserved.
 </footer>
+
+<!-- ANIMATION SCRIPT -->
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll(".animate").forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
