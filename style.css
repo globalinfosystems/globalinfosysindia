@@ -6,8 +6,8 @@
 }
 
 body {
-  color: #1F2933;
   background: #ffffff;
+  color: #1F2933;
 }
 
 /* CONTAINER */
@@ -43,7 +43,6 @@ body {
 
 .logo-wrap img {
   height: 42px;
-  width: auto;
 }
 
 .logo-wrap span {
@@ -57,7 +56,6 @@ nav a {
   color: white;
   margin-left: 24px;
   text-decoration: none;
-  font-size: 15px;
 }
 
 /* BUTTONS */
@@ -66,7 +64,6 @@ nav a {
   border-radius: 4px;
   text-decoration: none;
   display: inline-block;
-  font-weight: 500;
 }
 
 .btn.primary {
@@ -106,19 +103,15 @@ nav a {
 }
 
 .hero p {
-  font-size: 18px;
   margin: 20px 0 30px;
+  font-size: 18px;
 }
 
 /* TRUST */
 .trust {
+  background: #F4F7FA;
   padding: 90px 0;
   text-align: center;
-  background: #F4F7FA;
-}
-
-.trust h2 {
-  margin-bottom: 20px;
 }
 
 /* SECTIONS */
@@ -166,7 +159,7 @@ nav a {
       rgba(108,99,255,0.92),
       rgba(108,99,255,0.92)
     ),
-    url("hero.png") center/cover no-repeat;
+    url("hero.jpg") center/cover no-repeat;
   color: white;
   text-align: center;
 }
@@ -191,7 +184,6 @@ nav a {
 /* CONTACT */
 .contact-box {
   text-align: center;
-  font-size: 16px;
 }
 
 /* FOOTER */
@@ -202,16 +194,23 @@ footer {
   padding: 20px;
 }
 
+/* ANIMATIONS */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 36px;
   }
-
-  nav a {
-    margin-left: 15px;
-  }
-
   .logo-wrap span {
     display: none;
   }
