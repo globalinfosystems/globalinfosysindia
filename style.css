@@ -89,7 +89,7 @@ nav a {
       rgba(10,26,47,0.75),
       rgba(10,26,47,0.75)
     ),
-    url("hero.png") center/cover no-repeat;
+    url("hero.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,15 +123,6 @@ nav a {
   background: #F4F7FA;
 }
 
-.section.dark-bg {
-  background: linear-gradient(
-      rgba(10,26,47,0.88),
-      rgba(10,26,47,0.88)
-    ),
-    url("services-bg.jpg") center/cover no-repeat;
-  color: white;
-}
-
 .section h2 {
   text-align: center;
   margin-bottom: 50px;
@@ -144,13 +135,64 @@ nav a {
   gap: 30px;
 }
 
+/* CARD (BASE) */
 .card {
   background: white;
-  color: #1F2933;
   padding: 40px;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* SERVICE CARDS WITH IMAGES */
+.card.service {
+  height: 320px;
+  padding: 0;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* OVERLAY */
+.card.service::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(10,26,47,0.85),
+    rgba(10,26,47,0.6)
+  );
+}
+
+/* SERVICE CONTENT */
+.service-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card.service:hover {
+  transform: translateY(-8px);
+  transition: 0.3s ease;
+}
+
+/* BACKGROUND IMAGES */
+.card.service.analytics {
+  background-image: url("analytics.jpg");
+}
+
+.card.service.cloud {
+  background-image: url("cloud.jpg");
+}
+
+.card.service.consulting {
+  background-image: url("consulting.jpg");
 }
 
 /* TECHNOLOGY */
@@ -213,5 +255,8 @@ footer {
   }
   .logo-wrap span {
     display: none;
+  }
+  .card.service {
+    height: 260px;
   }
 }
